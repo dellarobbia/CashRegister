@@ -11,8 +11,8 @@
         //Constructor
         public TransactionMenu()
         {
-            MaxSelection = 3;
-            MinSelection = 1;
+            MaxSelection = 2;
+            MinSelection = 0;
             MenuString = menuString();
         }
 
@@ -23,9 +23,9 @@
         {
             String menuString = 
                 "Select the type of transaction:\n" +
+                "0: Exit\n" +
                 "1: Sale\n" +
-                "2: Refund\n" + 
-                "3: Exit\n";
+                "2: Refund\n";
             return menuString;
         }
     }

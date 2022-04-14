@@ -59,24 +59,20 @@ namespace CashRegister.Menus
             do
             {
                 Console.WriteLine(MenuString);
-                GetUserSelection();
-            } while (isSelectionValid() == true);
+                userSelection = GetUserSelection();
+            } while (isSelectionValid() == false);
         }
         public int GetUserSelection()
         {
             int selection = 0;
 
-            do
+            try
             {
-                try
-                {
-                    selection = int.Parse(Console.ReadLine());
-                } catch (FormatException)
-                {
-                    Console.WriteLine(DisplayInvalidSelection());
-                    selection = 0;
-                }
-            } while (selection != 0);
+                selection = int.Parse(Console.ReadLine());
+            } catch (FormatException)
+            {
+                selection = -1;
+            }
 
             return selection;
         }

@@ -11,12 +11,18 @@
      {
         //Fields
         private List<Items.MenuItem> menuItems;
+        private Items.MenuItem selection;
 
         //Properties
         public List<Items.MenuItem> MenuItems
         {
             get {return menuItems;}
             set {menuItems = value;}
+        }
+        public Items.MenuItem Selection
+        {
+            get {return selection;}
+            set {selection = menuItems[UserSelection - 1];}
         }
 
         //Constructor
@@ -25,7 +31,7 @@
             MenuItems = menuItems;
             MenuString = menuString();
             MaxSelection = setMaxSelection();
-            MinSelection = 1;
+            MinSelection = 0;
         }
 
         //Class Methods
@@ -33,7 +39,9 @@
         {
             int menuNumber = 1;
             int itemCount = menuItems.Count;
-            String menuText = "Please order from the menu below:\n\n";
+            String menuText = 
+                "Please order from the menu below:\n\n" + 
+                "0: Finish Order\n";
 
             for (int i = 0; i <= itemCount - 1; i++)
             {
