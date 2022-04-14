@@ -2,11 +2,13 @@
  * 
  */
 
+ using System;
+
  namespace CashRegister.Transactions
  {
      public interface ITransaction
      {
          public double CalcTotal();
-         public void DispReceipt();
+         public String Receipt();
      }
  }
