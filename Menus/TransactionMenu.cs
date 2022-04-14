@@ -6,37 +6,20 @@
 
  namespace CashRegister.Menus
  {
-    public class TransactionMenu : IMenu
+    public class TransactionMenu : Menu
     {
-        //Fields
-        private int userSelection;
-
-        //Properties
-        public int UserSelection
-        {
-            get{return userSelection;}
-            set{userSelection = value;}
-        }
-
         //Constructor
         public TransactionMenu()
         {
-            //null
+            MaxSelection = 3;
+            MinSelection = 1;
+            MenuString = menuString();
         }
 
         //Interface Methods
-        public void DisplayMenu()
-        {
-            Console.Write(MenuString());
-            GetUserSelection();
-        }
-        public int GetUserSelection()
-        {
-            return int.Parse(Console.ReadLine());
-        }
 
         //Class Mehtods
-        private String MenuString()
+        private String menuString()
         {
             String menuString = 
                 "Select the type of transaction:\n" +

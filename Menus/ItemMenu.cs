@@ -7,18 +7,12 @@
 
  namespace CashRegister.Menus
  {
-     public class ItemMenu : IMenu
+     public class ItemMenu : Menu
      {
         //Fields
-        private int userSelection;
         private List<Items.MenuItem> menuItems;
 
         //Properties
-        public int UserSelection
-        {
-            get {return userSelection;}
-            set {userSelection = value;}
-        }
         public List<Items.MenuItem> MenuItems
         {
             get {return menuItems;}
@@ -29,17 +23,9 @@
         public ItemMenu(List<Items.MenuItem> menuItems)
         {
             MenuItems = menuItems;
-        }
-
-        //Interface Methods
-        public void DisplayMenu()
-        {
-            Console.Write(menuString());
-            GetUserSelection();
-        }
-        public int GetUserSelection()
-        {
-            return int.Parse(Console.ReadLine());
+            MenuString = menuString();
+            MaxSelection = setMaxSelection();
+            MinSelection = 1;
         }
 
         //Class Methods
@@ -56,6 +42,10 @@
             }
 
             return menuText;
+        }
+        private int setMaxSelection()
+        {
+            return menuItems.Count;
         }
      }
  }
