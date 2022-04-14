@@ -29,13 +29,13 @@
         public ItemMenu(List<Items.MenuItem> menuItems)
         {
             MenuItems = menuItems;
-            DisplayMenu();
         }
 
         //Interface Methods
         public void DisplayMenu()
         {
             Console.Write(menuString());
+            GetUserSelection();
         }
         public int GetUserSelection()
         {
