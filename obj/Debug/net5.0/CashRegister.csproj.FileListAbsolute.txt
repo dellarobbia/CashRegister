@@ -1,0 +1,16 @@
+/home/andrewmckay/Documents/repos/CashRegister/bin/Debug/net5.0/CashRegister
+/home/andrewmckay/Documents/repos/CashRegister/bin/Debug/net5.0/CashRegister.deps.json
+/home/andrewmckay/Documents/repos/CashRegister/bin/Debug/net5.0/CashRegister.runtimeconfig.json
+/home/andrewmckay/Documents/repos/CashRegister/bin/Debug/net5.0/CashRegister.runtimeconfig.dev.json
+/home/andrewmckay/Documents/repos/CashRegister/bin/Debug/net5.0/CashRegister.dll
+/home/andrewmckay/Documents/repos/CashRegister/bin/Debug/net5.0/ref/CashRegister.dll
+/home/andrewmckay/Documents/repos/CashRegister/bin/Debug/net5.0/CashRegister.pdb
+/home/andrewmckay/Documents/repos/CashRegister/obj/Debug/net5.0/CashRegister.csproj.AssemblyReference.cache
+/home/andrewmckay/Documents/repos/CashRegister/obj/Debug/net5.0/CashRegister.GeneratedMSBuildEditorConfig.editorconfig
+/home/andrewmckay/Documents/repos/CashRegister/obj/Debug/net5.0/CashRegister.AssemblyInfoInputs.cache
+/home/andrewmckay/Documents/repos/CashRegister/obj/Debug/net5.0/CashRegister.AssemblyInfo.cs
+/home/andrewmckay/Documents/repos/CashRegister/obj/Debug/net5.0/CashRegister.csproj.CoreCompileInputs.cache
+/home/andrewmckay/Documents/repos/CashRegister/obj/Debug/net5.0/CashRegister.dll
+/home/andrewmckay/Documents/repos/CashRegister/obj/Debug/net5.0/ref/CashRegister.dll
+/home/andrewmckay/Documents/repos/CashRegister/obj/Debug/net5.0/CashRegister.pdb
+/home/andrewmckay/Documents/repos/CashRegister/obj/Debug/net5.0/CashRegister.genruntimeconfig.cache

@@ -10,7 +10,6 @@
      {
          //Fields
          private double amount;
-         private double total;
 
          //Properties
          public double Amount
