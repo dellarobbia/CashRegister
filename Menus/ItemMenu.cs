@@ -11,18 +11,12 @@
      {
         //Fields
         private List<Items.MenuItem> menuItems;
-        private Items.MenuItem selection;
 
         //Properties
         public List<Items.MenuItem> MenuItems
         {
             get {return menuItems;}
             set {menuItems = value;}
-        }
-        public Items.MenuItem Selection
-        {
-            get {return selection;}
-            set {selection = menuItems[UserSelection - 1];}
         }
 
         //Constructor

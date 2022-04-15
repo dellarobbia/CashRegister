@@ -24,8 +24,7 @@
             String menuString = 
                 "Select the type of transaction:\n" +
                 "0: Exit\n" +
-                "1: Sale\n" +
-                "2: Refund\n";
+                "1: Sale\n";
             return menuString;
         }
     }

@@ -71,13 +71,15 @@ namespace CashRegister
         static SaleTransaction buildSaleTransaction(ItemMenu itemMenu)
         {
             List<MenuItem> menuSelections = new List<MenuItem>();
+            MenuItem itemSelection;
 
             do
             {
                 itemMenu.DisplayMenu();
                 if(itemMenu.UserSelection != 0)
                 {
-                    menuSelections.Add(itemMenu.Selection);
+                    itemSelection = itemMenu.MenuItems[itemMenu.UserSelection - 1];
+                    menuSelections.Add(itemSelection);
                 }
             }while(itemMenu.UserSelection != 0);
 
