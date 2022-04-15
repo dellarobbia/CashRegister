@@ -1,4 +1,11 @@
-﻿using System;
+﻿/* Cash Register Program
+
+    Performs basic function of presenting user a menu they can order items from
+
+    Written by Andrew McKay
+    Last Edited on 4/15/22
+ */
+using System;
 using System.Collections.Generic;
 using CashRegister.Menus;
 using CashRegister.Items;
