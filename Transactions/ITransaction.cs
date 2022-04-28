@@ -10,5 +10,6 @@
      {
          public double CalcTotal();
          public String Receipt();
+        public void PrintReceipt();
      }
  }

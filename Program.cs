@@ -30,6 +30,7 @@ namespace CashRegister
                     {
                         transaction = buildSaleTransaction(itemMenu);
                         Console.WriteLine(transaction.Receipt());
+                        transaction.PrintReceipt();
                         break;
                     }
                     /*

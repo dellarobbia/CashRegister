@@ -35,5 +35,9 @@
 
              return "The amount of " + formatAmount + " has been refunded.";
          }
+        public void PrintReceipt()
+        {
+            //todo: build refund receipt printer
+        }
      }
  }

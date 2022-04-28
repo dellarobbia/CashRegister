@@ -4,6 +4,7 @@
 
  using System;
  using System.Collections.Generic;
+using System.IO;
 
  namespace CashRegister.Transactions
  {
@@ -62,5 +63,40 @@
 
             return receipt;
          }
+
+        public void PrintReceipt()
+        {
+            String receiptHeader = ReceiptHeader();
+            String receiptFileName = receiptHeader + ".txt";
+            DirectoryInfo receiptDirectory = new DirectoryInfo(@".\" + receiptFileName);
+            String receiptText = receiptHeader + "\n\n" + Receipt();
+
+            File.WriteAllText(receiptDirectory.FullName, receiptText);
+        }
+
+        /*
+        public void PrintReceipt()
+        {
+            String receiptHeader = ReceiptHeader();
+            String receiptFileName = receiptHeader + ".txt";
+
+            DirectoryInfo currentDirectory = new DirectoryInfo(".");
+
+            FileStream receiptFileStream = new FileStream(receiptFileName, FileMode.Create, FileAccess.ReadWrite);
+            StreamWriter receiptWriter = new StreamWriter(receiptFileStream);
+
+            receiptWriter.WriteLine(receiptHeader + "\n\n");
+            receiptWriter.Write(Receipt());
+
+            receiptFileStream.Close();
+        }
+        */
+
+        private String ReceiptHeader()
+        {
+            DateTime currentTime = DateTime.Now;
+
+            return "Transaction " + currentTime.ToString("yyyyMMddTHHmmss");
+        }
      }
  }
